@@ -1,0 +1,22 @@
+.Header-Container {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.Header-Container ul,
+li {
+    display: flex;
+    gap: 20px;
+    padding-right: 50px;
+}
+
+a {
+    list-style-type: none;
+    color: #fff;
+    text-decoration: none;
+}

@@ -1,0 +1,19 @@
+const products =  [
+    {
+        id:1,
+        title:'...',
+        price:'...',
+        category:'...',
+        description:'...',
+        image:'...'
+    },
+    /*...*/
+    {
+        id:30,
+        title:'...',
+        price:'...',
+        category:'...',
+        description:'...',
+        image:'...'
+    }
+]
