@@ -4,7 +4,8 @@ const  data = [
     id: 1,
     name: "Gaming BOOM HEADSET",
     price : ' 2800/- ',
-    image:"https://d3lnc7yu1ksdj.cloudfront.net/wp-content/uploads/2023/06/6c9cc50c-f4b0-4dad-8588-3bba979a3548_small-1.jpg"
+    image:"https://d3lnc7yu1ksdj.cloudfront.net/wp-content/uploads/2023/06/6c9cc50c-f4b0-4dad-8588-3bba979a3548_small-1.jpg",
+    quantity :1,
 
 },
 {

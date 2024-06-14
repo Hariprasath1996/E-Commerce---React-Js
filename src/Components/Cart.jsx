@@ -7,6 +7,7 @@ const Cart = ({  cart, setCart }) => {
     useEffect(()=>{
         setTotalAmount(cart.reduce((acc,curr)=> acc+parseInt(curr.price),0))
     },[cart])
+
     return (
         <>
             <div className="Cart-Container">
@@ -20,7 +21,10 @@ const Cart = ({  cart, setCart }) => {
                         </div>
                         <div className="Cart-product-details">
                             <h2 className="cart-product-name">{product.name}</h2>
-                            <h3 className="cart-pro-price">price: ₹ {product.price}</h3>
+                            <h3 className="cart-pro-price"> <b style={{color:"lightslategray"}}>price: <b style={{color:"Black"}}>₹</b> </b>{product.price}</h3>
+                        </div>
+                        <div>
+                            
                         </div>
                     </div>
                 ))}
