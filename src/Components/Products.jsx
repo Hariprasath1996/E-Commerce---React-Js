@@ -7,6 +7,7 @@ const Product = ({ product, cart, setCart }) => {
     const removeCart =()=>{
         setCart(cart.filter((cart)=>cart.id !== product.id))
     }
+   
     return (
         <>
             <div className="product">

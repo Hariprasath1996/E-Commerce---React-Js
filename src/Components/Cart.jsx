@@ -23,8 +23,9 @@ const Cart = ({  cart, setCart }) => {
                             <h2 className="cart-product-name">{product.name}</h2>
                             <h3 className="cart-pro-price"> <b style={{color:"lightslategray"}}>price: <b style={{color:"Black"}}>₹</b> </b>{product.price}</h3>
                         </div>
-                        <div>
-                            
+                        <div className="btns-box">
+                            <button className="increase"> + </button>
+                            <button className="decrease"> - </button>
                         </div>
                     </div>
                 ))}
