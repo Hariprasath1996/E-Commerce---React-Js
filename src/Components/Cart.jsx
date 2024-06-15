@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import "./Cart.css"
 
-const Cart = ({  cart, setCart }) => {
+const Cart = ({ cart,product,setCart }) => {
     const [totalAmount, setTotalAmount] = useState(0)
     // component created for for total amount 
     useEffect(()=>{
         setTotalAmount(cart.reduce((acc,curr)=> acc+parseInt(curr.price),0))
     },[cart])
-
     return (
         <>
             <div className="Cart-Container">
@@ -22,10 +21,6 @@ const Cart = ({  cart, setCart }) => {
                         <div className="Cart-product-details">
                             <h2 className="cart-product-name">{product.name}</h2>
                             <h3 className="cart-pro-price"> <b style={{color:"lightslategray"}}>price: <b style={{color:"Black"}}>₹</b> </b>{product.price}</h3>
-                        </div>
-                        <div className="btns-box">
-                            <button className="increase"> + </button>
-                            <button className="decrease"> - </button>
                         </div>
                     </div>
                 ))}
